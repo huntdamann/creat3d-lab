@@ -33,14 +33,14 @@ export default function Home() {
 
       </div>
       {/* Controls */}
-      <motion.div id="menu" variants={menuVariants} animate={openMenu ? "visible" : "hidden"} className={`absolute w-[25rem] ${openMenu ? 'z-20' : 'z-[-1]'} h-[80dvh] rounded-sm  flex flex-col items-start  left-2 pt-8`}>
+      <motion.div id="menu" variants={menuVariants} animate={openMenu ? "visible" : "hidden"} className={`absolute w-[25rem] ${openMenu ? 'z-20' : 'z-[-1] opacity-0'} h-[80dvh] rounded-sm  flex flex-col items-start  left-2 pt-8`}>
         <nav className="text-white  relative flex flex-col w-full h-full">
           <ul className="h-full">
             <li onClick={() => setOption("wine")} className="border-2 border-[#c8a641] h-[8rem] text-7xl text-center flex justify-center items-center">Wine</li>
             <li onClick={() => setOption("soda")}  className="border-2 border-[#c8a641] h-[8rem] text-7xl text-center flex justify-center items-center">Soda</li>
             <li onClick={() => setOption("shake")} className="border-2 border-[#c8a641] h-[8rem] text-7xl text-center flex justify-center items-center">Shakes</li>
           </ul>
-          <button onClick={() => setOpenMenu(prev => !prev)} className="bg-[#B75B5B] absolute bottom-0 min-w-24 left-[50%] transform translate-x-[-50%] p-1 mt-7 rounded-md">Close</button>
+          <button onClick={() => setOpenMenu(prev => !prev)} className="bg-[#924a4a] absolute bottom-0 min-w-24 left-[50%] transform translate-x-[-50%] p-1 mt-7 rounded-md">Close</button>
         </nav>
       </motion.div>
     </div>

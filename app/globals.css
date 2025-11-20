@@ -34,11 +34,18 @@ li:hover {
 
   background-color: #6a3030;
 }
+li:active {
+  color: #d1a054;
+  background-color: #B75B5B;
+
+}
 h1 {
   font-family: var(--font-quintessential);
 }
 button:active {
   transform: scale(0.9);
+  color: #d1a054;
+  background-color: #B75B5B;
 }
 @media (min-width: 426px) and (max-width: 768px) {
 
