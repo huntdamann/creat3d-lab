@@ -77,7 +77,7 @@ export default function Scene({ selected }) {
     <>
   
     
-    <Canvas className=' border' gl={{ antialias: false }} color='#000000' camera={{ position: [-3.17, 5.47, 5.34], fov: 50, near: 1, far: 30 }}>
+    <Canvas className='' gl={{ antialias: false }} color='#000000' camera={{ position: [-3.17, 5.47, 5.34], fov: 50, near: 1, far: 30 }}>
          
         <color attach="background" args={["#1a1a1a"]} />
 

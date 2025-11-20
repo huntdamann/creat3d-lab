@@ -66,9 +66,17 @@ button:active {
       font-size: 2rem;
     }
     span {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       width: 10em;
     }
+  }
+  #menu {
+    left: 50%;
+    right: 0;
+    bottom: 4rem;
+    transform: translateX(-50%);
+
+   
   }
 
 }

@@ -11,10 +11,10 @@ export default function Home() {
 
   const menuVariants = {
     visible : {
-      opacity: 1
+      opacity: 1,
     },
     hidden : {
-      opacity: 0
+      opacity: 0,
     }
   }
 
@@ -33,7 +33,7 @@ export default function Home() {
 
       </div>
       {/* Controls */}
-      <motion.div variants={menuVariants} animate={openMenu ? "visible" : "hidden"} className="absolute z-20 w-[25rem] h-[80dvh] rounded-sm  flex flex-col items-start  left-2 pt-8">
+      <motion.div id="menu" variants={menuVariants} animate={openMenu ? "visible" : "hidden"} className={`absolute w-[25rem] ${openMenu ? 'z-20' : 'z-[-1]'} h-[80dvh] rounded-sm  flex flex-col items-start  left-2 pt-8`}>
         <nav className="text-white  relative flex flex-col w-full h-full">
           <ul className="h-full">
             <li onClick={() => setOption("wine")} className="border-2 border-[#c8a641] h-[8rem] text-7xl text-center flex justify-center items-center">Wine</li>
