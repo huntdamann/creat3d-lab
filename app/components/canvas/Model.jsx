@@ -100,7 +100,7 @@ export function ModelFour(props) {
   const { nodes, materials } = useGLTF('/spark_soda.glb')
   return (
     <group {...props} dispose={null}>
-      <group position={[-1.5, 0.954, 0]} rotation={[-Math.PI / 2, 0, -0.5]} scale={0.308}>
+      <group position={[-1.5, 0, 0]} rotation={[-Math.PI / 2, 0, -0.5]} scale={0.208}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[0.001, 0, -0.031]} rotation={[0, -1.024, 0]}>
             <mesh

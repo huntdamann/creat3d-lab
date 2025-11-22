@@ -80,7 +80,7 @@ button:active {
   #menu {
     left: 50%;
     right: 0;
-    bottom: 4rem;
+    top: 1rem;
     transform: translateX(-50%);
 
    
