@@ -3,7 +3,7 @@ import React, { useRef, useState, Suspense, useEffect } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useGLTF, useTexture, Text, Environment, Float, OrbitControls, Center } from "@react-three/drei";
 import { DoubleSide, PerspectiveCamera } from 'three';
-import { Model, ModelTwo, ModelThree } from './Model'
+import { Model, ModelTwo, ModelThree, ModelFour } from './Model'
 
 
 
@@ -88,7 +88,7 @@ export default function Scene({ selected }) {
             {/* <Model /> */}
            
             {selected === 'wine' && <Model />}
-            {selected === 'soda' && <ModelTwo />}
+            {selected === 'soda' && <ModelFour />}
             {selected === 'shake' && <ModelThree />}
 
 

@@ -96,7 +96,50 @@ export function ModelThree(props) {
     </group>
   )
 }
+export function ModelFour(props) {
+  const { nodes, materials } = useGLTF('/spark_soda.glb')
+  return (
+    <group {...props} dispose={null}>
+      <group position={[-1.5, 0.954, 0]} rotation={[-Math.PI / 2, 0, -0.5]} scale={0.308}>
+        <group rotation={[Math.PI / 2, 0, 0]}>
+          <group position={[0.001, 0, -0.031]} rotation={[0, -1.024, 0]}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Object_4.geometry}
+              material={materials.Top_of_can}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Object_5.geometry}
+              material={materials['Material.001']}>
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder.geometry}
+                material={materials['Material.003']}
+                position={[-0.891, -6.284, 0.027]}
+                rotation={[0, -0.547, 0]}
+                scale={[3.374, 5.498, 3.374]}
+              />
+            </mesh>
+          </group>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_7.geometry}
+            material={materials.Top_of_can}
+            position={[0.056, -0.018, 0.001]}
+            rotation={[0, -1.024, 0]}
+          />
+        </group>
+      </group>
+    </group>
+  )
+}
 
+useGLTF.preload('/spark_soda.glb')
 useGLTF.preload('/power_shake_strawberry.glb')
 
 
